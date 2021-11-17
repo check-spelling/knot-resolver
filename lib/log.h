@@ -127,7 +127,7 @@ enum kr_log_group {
 #define LOG_GRP_TESTS_TAG		"tests"		/**< ``tests``: operations related to tests  */
 #define LOG_GRP_DOTAUTH_TAG		"dotaut"	/**< ``dotaut``: DNS-over-TLS against authoritative servers */
 #define LOG_GRP_HTTP_TAG		"http"		/**< ``http``: http module, its web interface and legacy DNS-over-HTTPS */
-#define LOG_GRP_CONTROL_TAG		"contrl"	/**< ``contrl``: TTY control sockets*/
+#define LOG_GRP_CONTROL_TAG		"control"	/**< ``control``: TTY control sockets*/
 #define LOG_GRP_MODULE_TAG		"module"	/**< ``module``: suitable for user-defined modules */
 #define LOG_GRP_DEVEL_TAG		"devel"		/**< ``devel``: for development purposes */
 #define LOG_GRP_REQDBG_TAG		"reqdbg"	/**< ``reqdbg``: debug logs enabled by policy actions */

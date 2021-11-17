@@ -51,7 +51,7 @@ set a new one.  There are some basic commands to start with.
 
 The *direct output* of commands sent over socket is captured and sent back,
 which gives you an immediate response on the outcome of your command.
-The commands and their output are also logged in ``contrl`` group,
+The commands and their output are also logged in ``control`` group,
 on ``debug`` level if successful or ``warning`` level if failed
 (see around :func:`log_level`).
 
