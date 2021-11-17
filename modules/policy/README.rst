@@ -264,7 +264,7 @@ They are marked as ``debug`` level, so e.g. with journalctl command you can use 
    It's useful for debugging weird DNS servers.
 
    If you do not use ``QTRACE`` in combination with ``DEBUG*``,
-   you additionally need either ``log_groups({'iterat'})`` (possibly with other groups)
+   you additionally need either ``log_groups({'iterate'})`` (possibly with other groups)
    or ``log_level('debug')`` to see the output in logs.
 
 .. py:attribute:: REQTRACE

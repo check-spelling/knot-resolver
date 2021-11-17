@@ -104,7 +104,7 @@ enum kr_log_group {
 #define LOG_GRP_DNSSEC_TAG		"dnssec"	/**< ``dnssec``: operations related to DNSSEC */
 #define LOG_GRP_HINT_TAG		"hint"		/**< ``hint``: operations related to static hints */
 #define LOG_GRP_PLAN_TAG		"plan"		/**< ``plan``: operations related to resolution plan */
-#define LOG_GRP_ITERATOR_TAG		"iterat"	/**< ``iterat``: operations related to iterate layer */
+#define LOG_GRP_ITERATOR_TAG		"iterate"	/**< ``iterate``: operations related to iterate layer */
 #define LOG_GRP_VALIDATOR_TAG		"valdtr"	/**< ``valdtr``: operations related to validate layer */
 #define LOG_GRP_RESOLVER_TAG		"resolv"	/**< ``resolv``: operations related to resolving */
 #define LOG_GRP_SELECTION_TAG		"select"	/**< ``select``: operations related to server selection */
