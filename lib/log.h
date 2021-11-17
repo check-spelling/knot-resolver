@@ -96,7 +96,7 @@ enum kr_log_group {
 #define LOG_GRP_TAUPDATE_TAG		"taupd"		/**< ``taupd``: TA update */
 #define LOG_GRP_TLS_TAG			"tls"		/**< ``tls``: TLS encryption layer */
 #define LOG_GRP_GNUTLS_TAG		"gnutls"	/**< ``gnutls``: low-level logs from GnuTLS */
-#define LOG_GRP_TLSCLIENT_TAG		"tls_cl"	/**< ``tls_cl``: TLS client messagess (used for TLS forwarding) */
+#define LOG_GRP_TLSCLIENT_TAG		"tls_cl"	/**< ``tls_cl``: TLS client messages (used for TLS forwarding) */
 #define LOG_GRP_XDP_TAG			"xdp"		/**< ``xdp``: operations related to XDP */
 #define LOG_GRP_ZIMPORT_TAG		"zimprt"	/**< ``zimprt``: operations related to zimport */
 #define LOG_GRP_ZSCANNER_TAG		"zscann"	/**< ``zscann``: operations related to zscanner */
@@ -104,7 +104,7 @@ enum kr_log_group {
 #define LOG_GRP_DNSSEC_TAG		"dnssec"	/**< ``dnssec``: operations related to DNSSEC */
 #define LOG_GRP_HINT_TAG		"hint"		/**< ``hint``: operations related to static hints */
 #define LOG_GRP_PLAN_TAG		"plan"		/**< ``plan``: operations related to resolution plan */
-#define LOG_GRP_ITERATOR_TAG		"iterat"	/**< ``iterat``: operations related to iterate layer */
+#define LOG_GRP_ITERATOR_TAG		"iterate"	/**< ``iterate``: operations related to iterate layer */
 #define LOG_GRP_VALIDATOR_TAG		"valdtr"	/**< ``valdtr``: operations related to validate layer */
 #define LOG_GRP_RESOLVER_TAG		"resolv"	/**< ``resolv``: operations related to resolving */
 #define LOG_GRP_SELECTION_TAG		"select"	/**< ``select``: operations related to server selection */
@@ -127,7 +127,7 @@ enum kr_log_group {
 #define LOG_GRP_TESTS_TAG		"tests"		/**< ``tests``: operations related to tests  */
 #define LOG_GRP_DOTAUTH_TAG		"dotaut"	/**< ``dotaut``: DNS-over-TLS against authoritative servers */
 #define LOG_GRP_HTTP_TAG		"http"		/**< ``http``: http module, its web interface and legacy DNS-over-HTTPS */
-#define LOG_GRP_CONTROL_TAG		"contrl"	/**< ``contrl``: TTY control sockets*/
+#define LOG_GRP_CONTROL_TAG		"control"	/**< ``control``: TTY control sockets*/
 #define LOG_GRP_MODULE_TAG		"module"	/**< ``module``: suitable for user-defined modules */
 #define LOG_GRP_DEVEL_TAG		"devel"		/**< ``devel``: for development purposes */
 #define LOG_GRP_REQDBG_TAG		"reqdbg"	/**< ``reqdbg``: debug logs enabled by policy actions */
@@ -252,7 +252,7 @@ void kr_log_q1(const struct kr_query *qry, enum kr_log_group group, const char *
  * Typically you use this as condition to compute some data to be logged,
  * in case that's considered too expensive to do unless it really gets logged.
  *
- * The request can be NULL, and there's a _qry() shortand to specify query instead.
+ * The request can be NULL, and there's a _qry() shorthand to specify query instead.
  */
 #define kr_log_is_debug(grp, req) \
 	__builtin_expect(kr_log_is_debug_fun(LOG_GRP_ ## grp, (req)), false)

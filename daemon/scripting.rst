@@ -8,7 +8,7 @@ Run-time reconfiguration
 Knot Resolver offers several ways to modify its configuration at run-time:
 
   - Using control socket driven by an external system
-  - Using Lua program embeded in Resolver's configuration file
+  - Using Lua program embedded in Resolver's configuration file
 
 Both ways can also be combined: For example the configuration file can contain
 a little Lua function which gathers statistics and returns them in JSON string.
@@ -51,7 +51,7 @@ set a new one.  There are some basic commands to start with.
 
 The *direct output* of commands sent over socket is captured and sent back,
 which gives you an immediate response on the outcome of your command.
-The commands and their output are also logged in ``contrl`` group,
+The commands and their output are also logged in ``control`` group,
 on ``debug`` level if successful or ``warning`` level if failed
 (see around :func:`log_level`).
 
@@ -118,7 +118,7 @@ process for liveliness by connecting to the UNIX socket.
       > map('require("kluautil").kr_table_pack(pcall(net.tls, "cert.pem", "key.pem"))')
       {
           {
-              true,  -- function suceeded
+              true,  -- function succeeded
               true,  -- function return value(s)
               ['n'] = 2,
           },
@@ -337,7 +337,7 @@ anonymous function:
 Note that each scheduled event is identified by a number valid for the duration
 of the event, you may use it to cancel the event at any time.
 
-To persist state between two invocations of a fuction Lua uses concept called
+To persist state between two invocations of a function Lua uses concept called
 closures_. In the following example function ``speed_monitor()`` is a closure
 function, which provides persistent variable called ``previous``.
 
