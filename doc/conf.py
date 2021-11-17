@@ -63,7 +63,7 @@ html_theme_options = {
     'collapse_navigation': False,
     'sticky_navigation': True,
 }
-html_logo = '_static/logo-negativ.svg'
+html_logo = '_static/logo-negative.svg'
 html_style = 'css/custom.css'
 
 # -- Options for LaTeX output --------------------------------------------------
